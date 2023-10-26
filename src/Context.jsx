@@ -38,7 +38,7 @@ const AppProvider = ({ children }) => {
 
     // Check if any input fields are empty
     if (Object.values(inputFields).some((value) => value === "")) {
-      toast.error("kindly fill out all inputs");
+      toast.error("kindly fill all inputs");
       return;
     }
 
