@@ -1,0 +1,114 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,600;1,400&family=Poppins:ital,wght@0,400;0,700;0,800;1,300;1,700;1,800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --blue: #1e90ff;
+  --black: #151515;
+  --grey_1: #f0f0f0;
+  --grey_2: #dcdcdc;
+  --grey_3: #716f6f;
+  --purple-2: #7c3aed;
+  --purple: #854dff;
+  --white: #ffffff;
+  --red: #ff5959;
+  --box-shadow-1: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --box-shadow-2: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+body {
+  background-color: var(--grey_2);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 70rem;
+  margin-inline: auto;
+  margin-block: 6rem;
+  background-color: var(--white);
+  padding: 2rem 4rem;
+  border-radius: 3rem;
+  border-bottom-right-radius: 15rem;
+  box-shadow: var(--box-shadow-1);
+  transition: transform 0.3s ease-in-out;
+}
+.container:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--box-shadow-2);
+}
+.form-container {
+  display: flex;
+  gap: 4rem;
+}
+
+.form-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: bold;
+  color: var(--grey_3);
+}
+.form-input {
+  border: solid 2px var(--grey_2);
+  border-radius: 7px;
+  font-size: 1.6rem;
+  width: 10rem;
+  font-weight: bolder;
+  padding: 1.5rem 1rem;
+}
+.error {
+  border: solid 1px rgb(214, 66, 66);
+}
+.form-input:focus {
+  outline: none;
+}
+.btn-container {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.underline {
+  height: 1px;
+  flex: 1;
+  background-color: var(--grey_2);
+}
+.btn-submit {
+  flex: 0 0 auto;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  border-color: transparent;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: var(--purple-2);
+  transform: translateY(-3px);
+}
+.btn-icon {
+  color: var(--white);
+}
+.age {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 7rem;
+}
+.age-span {
+  color: var(--purple);
+}
