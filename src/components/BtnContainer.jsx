@@ -11,6 +11,7 @@ const BtnContainer = () => {
       <button type="button" className="btn-submit" onClick={handleButtonClick}>
         <FaArrowDown className="btn-icon" />
       </button>
+      <div className="underline hidden"></div>
     </div>
   );
 };
