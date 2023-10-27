@@ -30,6 +30,10 @@ const AppProvider = ({ children }) => {
       ...prevFields,
       [name]: value,
     }));
+    setError((prevError) => ({
+      ...prevError,
+      [name]: false,
+    }));
   };
 
   // Function to handle the button click
@@ -38,7 +42,7 @@ const AppProvider = ({ children }) => {
 
     // Check if any input fields are empty
     if (Object.values(inputFields).some((value) => value === "")) {
-      toast.error("kindly fill all inputs. be smart please!");
+      toast.error("kindly fill all inputs.");
       return;
     }
 
@@ -103,7 +107,7 @@ const AppProvider = ({ children }) => {
       month: monthDifference,
       year: yearsDifference,
     }));
-    setError((prevError) => ({ day: false, month: false, year: false }));
+    setError({ day: false, month: false, year: false });
     console.log(
       `${yearsDifference} years, ${monthDifference} months, ${daysDifference} days`
     );

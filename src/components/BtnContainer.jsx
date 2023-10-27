@@ -8,7 +8,7 @@ const BtnContainer = () => {
   return (
     <div className="btn-container">
       <div className="underline"></div>
-      <button className="btn-submit" onClick={handleButtonClick}>
+      <button type="button" className="btn-submit" onClick={handleButtonClick}>
         <FaArrowDown className="btn-icon" />
       </button>
     </div>
